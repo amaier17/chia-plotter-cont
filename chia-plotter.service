@@ -1,0 +1,14 @@
+[Unit]
+Description=Chia Plotter Service
+
+[Service]
+Restart=always
+RestartSec=1
+
+WorkingDirectory=/opt/chia/chia-plotter
+ExecStart=./build/chia_plot -n -1 -r 18 -t /mnt/scratch0/ -d /local-plot/ -p b52fc03aa949d3eaaf743fb4eb429bf1f31b0b540ff9c5bb0a616d4b5eb393ca16378f14572f3eb3f169699a73603a7a -f aee6b9623dba15dbdd1a928d1b3311492c1b2c81200fee93eac7110f4be5ce40bc8a3eb7bcc247ef996d53dd04650d8e
+User=chia
+Group=chia
+
+[Install]
+WantedBy=multi-user.target
