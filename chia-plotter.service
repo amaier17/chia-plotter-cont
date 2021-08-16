@@ -6,7 +6,7 @@ Restart=always
 RestartSec=1
 
 WorkingDirectory=/opt/chia/chia-plotter
-ExecStart=/opt/chia/chia-plotter/build/chia_plot -K 2 -n -1 -r 18 -t /mnt/md0/ -d /local-plot/ -c xch1820qy2s4np0586e2fyszrx33fhcvc8zv8ampfrz73cjdremnf3gq5fqdjc -f aee6b9623dba15dbdd1a928d1b3311492c1b2c81200fee93eac7110f4be5ce40bc8a3eb7bcc247ef996d53dd04650d8e
+ExecStart=/opt/chia/chia-plotter/build/chia_plot -K 2 -n -1 -r 18 -t /mnt/md0/ -d /mnt/md0/ -c xch1820qy2s4np0586e2fyszrx33fhcvc8zv8ampfrz73cjdremnf3gq5fqdjc -f aee6b9623dba15dbdd1a928d1b3311492c1b2c81200fee93eac7110f4be5ce40bc8a3eb7bcc247ef996d53dd04650d8e
 User=chia
 Group=chia
 

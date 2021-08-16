@@ -9,7 +9,7 @@ arguments for the plotter tool.
 
 Install the service, enable, and start it:
 ```
-sudo ln -s ./chia-plotter.service /etc/systemd/system/
+sudo ln -s <path>/chia-plotter-cont/chia-plotter.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo sytemctl enable chia-plotter
 sudo systemctl start chia-plotter
